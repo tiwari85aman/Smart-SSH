@@ -3,7 +3,9 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 210px;
+  height: 100%;
+  margin-top: 65px;
 }
 
 .sidenav .mat-toolbar {
@@ -14,10 +16,10 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  -webkit-app-region: drag;
+  /* -webkit-app-region: drag; */
 }
 
-mat-icon{
+.nav-icon{
   margin: 10%;
 }
 
@@ -25,7 +27,10 @@ a{
   text-decoration: none;
 }
 
+.example-icon {
+  padding: 0 14px;
+}
 
-.mat-nav-list a.active {
-  background: blue;
+.example-spacer {
+  flex: 1 1 auto;
 }

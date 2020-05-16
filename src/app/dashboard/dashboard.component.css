@@ -2,13 +2,6 @@
   margin: 20px;
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
 
 .more-button {
   position: absolute;
@@ -18,4 +11,19 @@
 
 .dashboard-card-content {
   text-align: center;
+  padding: 5%;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+.properties-data{
+  width: 100%;
+}
+.properties-data td{
+  text-align: left;
+}
+
+.dashboard-content{
+margin-left: 1%;
+margin-top: 1%;
 }

@@ -1,42 +1,47 @@
+<mat-toolbar color="primary">
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+    *ngIf="isHandset$ | async">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span>Smart SSH</span>
+  <span class="example-spacer"></span>
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">cloud</mat-icon>
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">person</mat-icon>
+</mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
+
   <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <mat-divider></mat-divider>
       <a mat-list-item routerLink="/hosts" class="mat-list-item-focus">
-        <mat-icon>dns</mat-icon>
+        <mat-icon class="nav-icon">dns</mat-icon>
         Host
       </a>
       <mat-divider></mat-divider>
 
       <a mat-list-item routerLink="/hosts">
-        <mat-icon>settings_ethernet</mat-icon>
+        <mat-icon class="nav-icon">settings_ethernet</mat-icon>
 
         Port Forward
       </a>
       <mat-divider></mat-divider>
       <a mat-list-item routerLink="/hosts">
-        <mat-icon>router</mat-icon>
+        <mat-icon class="nav-icon">router</mat-icon>
 
         Ping
       </a>
       <mat-divider></mat-divider>
       <a mat-list-item routerLink="/hosts">
-        <mat-icon>settings</mat-icon>
+        <mat-icon class="nav-icon">settings</mat-icon>
         Settings
       </a>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>Smart SSH</span>
-    </mat-toolbar>
+
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
 
