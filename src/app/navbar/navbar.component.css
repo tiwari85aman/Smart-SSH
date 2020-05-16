@@ -14,4 +14,18 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  -webkit-app-region: drag;
+}
+
+mat-icon{
+  margin: 10%;
+}
+
+a{
+  text-decoration: none;
+}
+
+mat-grid-tile{
+  align-items: left;
+  align-content: left;
 }
