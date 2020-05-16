@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-require('electron-titlebar')
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

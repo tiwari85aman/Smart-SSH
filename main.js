@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron')
-const electron_title = require('electron-titlebar')
 
 let win;
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
