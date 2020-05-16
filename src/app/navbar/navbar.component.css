@@ -25,7 +25,7 @@ a{
   text-decoration: none;
 }
 
-mat-grid-tile{
-  align-items: left;
-  align-content: left;
+
+.mat-nav-list a.active {
+  background: blue;
 }
