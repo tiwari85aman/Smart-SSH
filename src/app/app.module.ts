@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StatusComponent } from './status/status.component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { StatusComponent } from './status/status.component';
     MatSelectModule,
     MatRadioModule,
     ReactiveFormsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    NgxSkeletonLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

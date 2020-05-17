@@ -10,7 +10,13 @@
       </mat-list-item>
     </div>
     <ng-template #online_loading>
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      <div class="item">
+        <ngx-skeleton-loader count="3" appearance="line" [theme]="{
+          'border-radius': '5px',
+          height: '30px',
+          border: '1px solid white'
+        }"></ngx-skeleton-loader>
+      </div>
     </ng-template>
     <mat-divider></mat-divider>
     <div mat-subheader>Offline</div>
@@ -22,8 +28,13 @@
       </mat-list-item>
     </div>
     <ng-template #offline_loading>
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </ng-template>
+      <div class="item">
+        <ngx-skeleton-loader count="3" appearance="line" [theme]="{
+          'border-radius': '5px',
+          height: '30px',
+          border: '1px solid white'
+        }"></ngx-skeleton-loader>
+      </div>    </ng-template>
 
   </mat-list>
   <div class="center">
@@ -32,10 +43,4 @@
       Manual Check
     </button>
   </div>
-</div>
-<div class="linear-background">
-  <div class="inter-draw"></div>
-  <div class="inter-crop"></div>
-  <!-- <div class="inter-right--top"></div> -->
-  <!-- <div class="inter-right--bottom"></div> -->
 </div>
