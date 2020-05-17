@@ -22,8 +22,8 @@ export class StatusComponent implements OnInit {
     this.dataService
       .getData('http://demo1650700.mockable.io/status')
       .subscribe((data: any[]) => {
-        console.log(data);
-        // this.online = data["online"]
+        // console.log(data);
+        this.online = data["online"]
         this.offline = data["offline"]
       });
   }

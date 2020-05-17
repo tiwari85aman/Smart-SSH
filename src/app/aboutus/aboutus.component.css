@@ -1,0 +1,27 @@
+.example-card {
+  max-width: 400px;
+  margin-left: 2%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 5%; */
+}
+
+.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-left: 12%;
+}
+
+.about_author{
+margin-top: 5%;
+}
+.grid-container {
+  margin: 20px;
+}

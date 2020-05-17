@@ -26,6 +26,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StatusComponent } from './status/status.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     NavbarComponent,
     DashboardComponent,
     HostFormComponent,
-    StatusComponent
+    StatusComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
