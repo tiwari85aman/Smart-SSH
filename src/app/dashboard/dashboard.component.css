@@ -32,3 +32,9 @@ mat-spinner{
   margin-top: 20%;
   margin-left: 45%;
 }
+
+.floating-button {
+  position: fixed;
+  right: 5%;
+  top: 85%;
+}
