@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" class="mat-elevation-z3">
+<mat-toolbar color="primary" class="mat-elevation-z3 tilted-header">
   <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
     *ngIf="isHandset$ | async">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
@@ -23,13 +23,11 @@
 
       <a mat-list-item routerLink="/hosts">
         <mat-icon class="nav-icon">settings_ethernet</mat-icon>
-
         Port Forward
       </a>
       <mat-divider></mat-divider>
-      <a mat-list-item routerLink="/hosts">
+      <a mat-list-item routerLink="/status">
         <mat-icon class="nav-icon">router</mat-icon>
-
         Ping
       </a>
       <mat-divider></mat-divider>

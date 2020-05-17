@@ -17,7 +17,9 @@
   position: fixed;
   z-index: 2;
   width: 100% !important;
-
+  /* top:-5%;
+  left:-5%;
+  transform:rotate(-2deg); */
   -webkit-app-region: drag;
 }
 

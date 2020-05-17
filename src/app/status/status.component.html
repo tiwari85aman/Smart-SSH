@@ -1,0 +1,41 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Connection Status</h1>
+  <mat-list>
+    <div mat-subheader>Online</div>
+    <div *ngIf="online else online_loading">
+      <mat-list-item *ngFor="let each of online">
+        <mat-icon mat-list-icon class="online">cloud_queue</mat-icon>
+        <div mat-line>{{each.Host | titlecase }}</div>
+        <div mat-line> {{each.Hostname }} </div>
+      </mat-list-item>
+    </div>
+    <ng-template #online_loading>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </ng-template>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Offline</div>
+    <div *ngIf="offline else offline_loading">
+      <mat-list-item *ngFor="let each of offline">
+        <mat-icon mat-list-icon color="warn">cloud_off</mat-icon>
+        <div mat-line>{{each.Host | titlecase }}</div>
+        <div mat-line> {{each.Hostname}} </div>
+      </mat-list-item>
+    </div>
+    <ng-template #offline_loading>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </ng-template>
+
+  </mat-list>
+  <div class="center">
+    <button mat-flat-button color="primary" class="manual">
+      <mat-icon>dns</mat-icon>
+      Manual Check
+    </button>
+  </div>
+</div>
+<div class="linear-background">
+  <div class="inter-draw"></div>
+  <div class="inter-crop"></div>
+  <!-- <div class="inter-right--top"></div> -->
+  <!-- <div class="inter-right--bottom"></div> -->
+</div>

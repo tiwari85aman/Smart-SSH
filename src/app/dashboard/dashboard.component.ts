@@ -22,7 +22,7 @@ export class DashboardComponent {
   ngOnInit() {
 
     this.dataService
-      .getData('http://demo1650700.mockable.io/')
+      .getData('http://localhost:5000/ssh/host')
       .subscribe((data: any[]) => {
         console.log(data);
         this.hosts = data;
