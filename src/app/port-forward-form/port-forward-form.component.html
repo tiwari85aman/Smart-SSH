@@ -1,0 +1,53 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>
+  <form [formGroup]="localForwardForm" novalidate (ngSubmit)="onSubmit()">
+    <mat-card class="shipping-card">
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Host Port" formControlName="hostPort">
+              <mat-error *ngIf="localForwardForm.controls['hostPort'].hasError('required')">
+                Host Port is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Host" formControlName="host">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Remote IP" formControlName="remoteIp">
+              <mat-error *ngIf="localForwardForm.controls['remoteIp'].hasError('required')">
+                Remote IP is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Remote Port" formControlName="remotePort">
+              <mat-error *ngIf="localForwardForm.controls['remotePort'].hasError('required')">
+                Remote Port is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="center">
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

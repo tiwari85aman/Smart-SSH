@@ -11,14 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { HostFormComponent } from './host-form/host-form.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -27,6 +27,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { StatusComponent } from './status/status.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { PortForwardComponent } from './port-forward/port-forward.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { PortForwardFormComponent } from './port-forward-form/port-forward-form.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     DashboardComponent,
     HostFormComponent,
     StatusComponent,
-    AboutusComponent
+    AboutusComponent,
+    PortForwardComponent,
+    PortForwardFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,9 +66,13 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     MatRadioModule,
     ReactiveFormsModule,
     MatProgressBarModule,
-    NgxSkeletonLoaderModule
+    NgxSkeletonLoaderModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

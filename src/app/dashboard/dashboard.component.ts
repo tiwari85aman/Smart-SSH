@@ -24,7 +24,7 @@ export class DashboardComponent {
     this.dataService
       .getData('http://localhost:5000/ssh/host')
       .subscribe((data: any[]) => {
-        this.hosts = data;
+        this.hosts = data["data"];
       });
   }
 }
