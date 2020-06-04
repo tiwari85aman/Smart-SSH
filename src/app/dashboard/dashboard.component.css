@@ -2,7 +2,6 @@
   margin: 20px;
 }
 
-
 .more-button {
   position: absolute;
   top: 5px;
@@ -16,19 +15,19 @@
   min-height: 100px;
 }
 
-.properties-data{
+.properties-data {
   width: 100%;
 }
-.properties-data td{
+.properties-data td {
   text-align: left;
 }
 
-.dashboard-content{
-margin-left: 1%;
-margin-top: 1%;
+.dashboard-content {
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
-mat-spinner{
+mat-spinner {
   margin-top: 20%;
   margin-left: 45%;
 }
@@ -37,4 +36,33 @@ mat-spinner{
   position: fixed;
   right: 5%;
   top: 85%;
+}
+
+.status-circle {
+  background: #28b62c;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  -webkit-animation: pulse-animation 2s infinite;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+@-webkit-keyframes pulse-animation {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
 }
