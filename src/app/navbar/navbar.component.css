@@ -13,14 +13,21 @@
 }
 
 .mat-toolbar.mat-primary {
-  height: 64px;
+  height: 78px;
   position: fixed;
   z-index: 2;
-  width: 100% !important;
-  /* top:-5%;
+  width: 115% !important;
+  top:-4%;
   left:-5%;
-  transform:rotate(-2deg); */
+  transform:rotate(-2deg);
   -webkit-app-region: drag;
+}
+body{
+  overflow:hidden;
+}
+.mat-toolbar.mat-primary > * {
+  margin-left:5%;
+  transform:rotate(2deg);
 }
 
 mat-sidenav-content {

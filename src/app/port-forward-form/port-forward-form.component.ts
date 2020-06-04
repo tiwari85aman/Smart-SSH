@@ -11,7 +11,7 @@ export class PortForwardFormComponent implements OnInit {
     hostPort: [null, Validators.required],
     host: [null, Validators.required],
     remoteIp: [null, Validators.required],
-    remotePort: [22, Validators.required],
+    remotePort: [null, Validators.required],
   });
 
   constructor(private fb: FormBuilder) { }
