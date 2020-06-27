@@ -7,8 +7,15 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http: HttpClient) { }
+  private service_url = "http://localhost:5000/ssh"
 
-  public getData(url) {
+  public getData(endpoint) {
+    var url = this.service_url + endpoint
     return this.http.get(url);
+  }
+
+  public postData(endpoint, data) {
+    var url = this.service_url + endpoint
+    return this.http.post(url,data);
   }
 }

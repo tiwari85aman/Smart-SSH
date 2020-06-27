@@ -27,7 +27,7 @@ export class PortForwardComponent implements OnInit {
 
   constructor(private dataService: DataService, public dialog: MatDialog) {
     this.dataService
-      .getData('http://localhost:5000/ssh/local-forward')
+      .getData('/local-forward')
       .subscribe((data: any[]) => {
         this.dataSource = new MatTableDataSource(data['data']);
         this.dataSource.paginator = this.paginator;

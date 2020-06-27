@@ -25,7 +25,7 @@ export class DashboardComponent {
 
   ngOnInit() {
     this.dataService
-      .getData('http://localhost:5000/ssh/host')
+      .getData('/host')
       .subscribe((data: any[]) => {
         this.hosts = this.filter_dashboard_keys(data['data']);
       });

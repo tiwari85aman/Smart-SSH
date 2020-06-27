@@ -20,11 +20,11 @@ export class StatusComponent implements OnInit {
   ngOnInit() {
 
     this.dataService
-      .getData('http://demo1650700.mockable.io/status')
+      .getData('/ping')
       .subscribe((data: any[]) => {
         // console.log(data);
-        this.online = data["online"]
-        this.offline = data["offline"]
+        this.online = data["data"]["online"]
+        this.offline = data["data"]["offline"]
       });
   }
 }
