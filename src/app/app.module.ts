@@ -33,6 +33,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { PortForwardFormComponent } from './port-forward-form/port-forward-form.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     AboutusComponent,
     PortForwardComponent,
     PortForwardFormComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
