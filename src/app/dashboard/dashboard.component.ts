@@ -19,16 +19,21 @@ export class DashboardComponent {
   /** Based on the screen size, switch from standard to one column per row */
   // cards =
   public hosts = null;
+  public api_error = null;
   regularDistribution = 100 / 3.2 + '%';
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService
       .getData('/host')
       .subscribe((data: any[]) => {
         this.hosts = this.filter_dashboard_keys(data['data']);
-      });
+      },
+        err => {
+          this.api_error = err;
+        }
+      );
   }
 
   filter_dashboard_keys(data: []) {

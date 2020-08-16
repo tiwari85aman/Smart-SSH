@@ -34,6 +34,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { PortForwardFormComponent } from './port-forward-form/port-forward-form.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { SettingsComponent } from './settings/settings.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { SettingsComponent } from './settings/settings.component';
     PortForwardComponent,
     PortForwardFormComponent,
     SettingsComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
