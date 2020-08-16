@@ -10,7 +10,7 @@ function createWindow () {
     width: 1280,
     height: 800,
     backgroundColor: '#ffffff',
-    // frame: false,
+    frame: false,
 
   })
 
